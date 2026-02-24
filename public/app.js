@@ -1,4 +1,4 @@
-document.querySelector("mainForm").onsubmit = (e) => {
+document.querySelector("#mainForm").onsubmit = async (e) => {
 
   e.preventDefault();
 

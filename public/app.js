@@ -1,6 +1,6 @@
 document.querySelector("mainForm").onsubmit = (e) => {
 
-  event.preventDefault();
+  e.preventDefault();
 
   const data = new FormData(event.target);
 
@@ -20,6 +20,7 @@ document.querySelector("mainForm").onsubmit = (e) => {
     }
   } catch (error){
     console.error("AAAAAAAAAAAAA ", error);
+    alert("Error");
   }
 
 }

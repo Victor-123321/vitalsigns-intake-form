@@ -5,6 +5,7 @@ const cors = require('cors');
 
 app.use(cors());
 app.use(express.static('public')); // Servirá index.html, css y js automáticamente
+app.use(express.json());
 
 // Example hint:
 app.post('/api/register-patient', (req, res) => {

@@ -2,7 +2,7 @@ document.querySelector("#mainForm").onsubmit = async (e) => {
 
   e.preventDefault();
 
-  const data = new FormData(event.target);
+  const data = new FormData(e.target);
 
   try {
     const response = await fetch("/api/register-patient", {

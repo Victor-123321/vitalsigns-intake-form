@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitalSigns | Patient Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="#" class="logo">
+      <img src="https://www.clker.com//cliparts/2/3/8/f/11954335252025281875red_cross_joshua_dwire_03.svg.hi.png">
+      VitalSigns
+    </a>
+    <ul>
+      <li>
+        <a href="#">Login</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>VitalSigns Medical Center</h1>
+    <h2>Patient Intake Form</h2>
+  </header>
+
+  <main>
+    <form id="mainForm" class="grid">
+      <div class="row-full">
+        <label for="name">Your Full Name</label>
+        <input type="text" placeholder="Your Name" id="name" name="name">
+      </div>
+      <div class="row-half">
+        <label for="email">Email</label>
+        <input type="text" placeholder="example@example.com" id="email" name="email">
+      </div>
+      <div class="row-half">
+        <label for="password">Password</label>
+        <input type="password" placeholder="********" id="password" name="password">
+      </div>
+      <div class="row-half">
+        <label for="date">Date of Birth</label>
+        <input type="date" id="birth" name="birth">
+      </div>
+      <div class="row-half">
+        <fieldset>
+          <legend>Select your gender:</legend>
+
+          <label for="male">Male</label>
+          <input type="radio" value="male" id="male" name="gender">
+
+          <label for="female">Female</label>
+          <input type="radio" value="female" id="female" name="gender">
+
+          <label for="other">Other</label>
+          <input type="radio" value="other" id="other" name="gender">
+        </fieldset>
+      </div>
+      <div class="row-quarter">
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" name="height" max="300">
+      </div>
+      <div class="row-quarter">
+        <label for="blood">Blood Type</label>
+        <select name="blood" id="blood">
+          <option value="A+">A+</option>
+          <option value="A-">B-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+      <div class="row-full">
+        <label for="history">Medical History</label>
+        <textarea name="history" id="history"></textarea>
+      </div>
+      <div class="row-full consent-group">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">
+          I consent to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo corrupti 67 obcaecati
+          dignissimos harum
+          incidunt temporibus alias, cupiditate fuga error culpa eaque fugiat facilis recusandae hic rerum nobis
+          possimus. Ab!
+        </label>
+      </div>
+
+      <div class="row-full">
+        <button type="submit" class="submit-btn">Complete Registration</button>
+      </div>
+    </form>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+document.querySelector("mainForm").onsubmit = (e) => {
+
+  event.preventDefault();
+
+  const data = new FormData(event.target);
+
+  try {
+    const response = await fetch("/api/register-patient", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(value)
+    });
+    if (response.ok) {
+      const result = await response.json();
+      alert("Registration successful: ", result);
+    } else {
+      alert("how");
+    }
+  } catch (error){
+    console.error("AAAAAAAAAAAAA ", error);
+  }
+
+}

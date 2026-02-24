@@ -1,0 +1,104 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+h1, h2{
+  color: #334155;
+}
+nav{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+  background-color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+}
+.grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+.grid input, .grid textarea{
+  font-size: 1rem;
+}
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+nav > ul{
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: white;
+  transition: color 0.1s;
+}
+
+nav > ul > li > a:hover{
+  color: #ef4444;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+.logo:hover{
+  color: #ef4444;
+}
+
+nav img{
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+header, main{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header{
+  text-align: center;
+}
+
+main > form{
+  display: flex;
+  flex-direction: column;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.row-full{ 
+  grid-column: span 4; 
+}
+
+.row-half{ 
+  grid-column: span 2; 
+}
+
+.row-quarter{ 
+  grid-column: span 1; 
+}
+
+.submit-btn{
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #0f172a;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}

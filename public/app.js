@@ -3,6 +3,7 @@ document.querySelector("#mainForm").onsubmit = async (e) => {
   e.preventDefault();
 
   const data = new FormData(e.target);
+  const value = Object.fromEntries(data.entries());
 
   try {
     const response = await fetch("/api/register-patient", {
